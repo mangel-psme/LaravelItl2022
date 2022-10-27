@@ -12,8 +12,8 @@ class DemoController extends Controller
         echo 'Hola mundo desde controlador';
     }
 
-    public function vista1() 
+    public function vista1()
     {
-        
+        return view('vista1');
     }
 }

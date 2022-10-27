@@ -6,8 +6,6 @@
 	<title>Document</title>
 </head>
 <body>
-
-	<h1>Contenido de la vista</h1>
-	
+	<h1>Cargando una vista</h1>
 </body>
 </html>
