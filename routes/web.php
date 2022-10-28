@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\DemoController;
+use App\Http\Controllers\ProductosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,17 @@ Route::get('holaController', [DemoController::class, 'holaMundo']);
 Route::get('vista1', [DemoController::class, 'vista1']);
 // http://127.0.0.1:8000/vista1
 
+
+Route::get('listaP', [ProductosController::class, 'lista']);
+// http://127.0.0.1:8000/listaP
+
+Route::get('formularioP', [ProductosController::class, 'formulario']);
+// http://127.0.0.1:8000/formularioP
+
+Route::post('registrarP', [ProductosController::class, 'registrar']);
+
+Route::get('cargarP/{id}', [ProductosController::class, 'cargar']);
+
+Route::post('editarP', [ProductosController::class, 'editar']);
+
+Route::get('eliminarP/{id}', [ProductosController::class, 'eliminar']);
